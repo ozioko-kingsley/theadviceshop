@@ -69,6 +69,10 @@ nav ul li.current {
     float: right;
 }
 
+section{
+    margin-bottom: 200px !important;
+}
+
 footer, header#pageHeader {
     background-color: #565656;
     color: #FFFFFF;
@@ -140,13 +144,73 @@ blockquote {
     margin-right: 1%;
 }
 
-#login {
-    float: right;
-    width: 12em;
+/* Forms */
+header#pageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #ddd;
 }
 
-#login input[type="submit"] {
-    margin-left: 1em;
+#pageHeader a h1 {
+    margin: 0;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+#login form {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds spacing between elements */
+}
+
+#login input, #login button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#login button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+#login button:hover {
+    background-color: #0056b3;
+}
+
+small a {
+    color: #5d3dfa !important;
+    font-weight: bolder;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header#pageHeader {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #login form {
+        flex-direction: column; /* Stack inputs on mobile */
+        width: 100%;
+        max-width: 300px;
+        margin-top: 10px;
+    }
+
+    #login input, #login button {
+        width: 100%; /* Full width on mobile */
+    }
+}
+
+small, .small {
+    color: #000000;
 }
 
 footer .user {

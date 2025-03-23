@@ -10,9 +10,9 @@
 <body>
 <?php include("inc_header.php");
 include("inc_nav.php"); ?>
+<section id="content">
 <h2>Subscribe now for great advice!</h2>
 <h3>We are so confident, we offer a money-back guarantee :)</h3>
-<div id="content">
     <form action="process.php" method="get">
   <p>
     <label for="name">Name:</label>
@@ -33,7 +33,7 @@ include("inc_nav.php"); ?>
   </p>
 </form>
 <p>Try us out. You won't be disappointed.</p>
-</div>
+</section>
 <?php include("inc_footer.php"); ?>
 </body>
 </html>

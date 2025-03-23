@@ -1,7 +1,7 @@
 <?php
 session_start();
-$_SESSION = array(); // empty array
-session_destroy();
-header("Location: ".$_GET['page'].".php");
+session_unset(); // Unset all session variables
+session_destroy(); // Destroy the session
+header("Location: index.php"); // Redirect to homepage
 exit();
 ?>
